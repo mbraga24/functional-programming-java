@@ -13,7 +13,7 @@ public class FP06Exercise {
 				  						"Microservices", "AWS", "PCF","Azure", "Docker", "Kubernetes");
 		
 		courses.stream()
-		.map(course -> course.length())
+		.map(course -> course + ": " + course.length())
 		.forEach(System.out::println);
 	}
 
