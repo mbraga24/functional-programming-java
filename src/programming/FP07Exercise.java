@@ -13,14 +13,20 @@ public class FP07Exercise {
 		
 	}
 	
-	private static int sum(int a, int b) {
-		return a + b;
-	}
+	
+//	private static int sum(int a, int b) {
+//		return a + b;
+//	}
 	
 	private static int addList(List<Integer> numbers) {
 		
+		// return numbers.stream()
+		// .reduce(0, FP07Exercise ::sum);
+		
+		// implementing lambda expression
+		
 		return numbers.stream()
-		.reduce(0, FP07Exercise ::sum);
+				.reduce(0, (a,b) -> a + b);
 	
 	}
 
