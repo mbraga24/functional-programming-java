@@ -23,11 +23,13 @@ public class FP07Exercise {
 		// return numbers.stream()
 		// .reduce(0, FP07Exercise ::sum);
 		
-		// implementing lambda expression
-		
+		// Implementing lambda expression
+		// return numbers.stream()
+		// .reduce(0, (a,b) -> a + b);
+
+		// Implementing Integer class
 		return numbers.stream()
-				.reduce(0, (a,b) -> a + b);
-	
+				.reduce(0, Integer::sum);
 	}
 
 }
